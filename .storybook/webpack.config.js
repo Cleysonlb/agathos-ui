@@ -9,7 +9,9 @@ module.exports = {
         test: /\.css$/i,
         loader: 'css-loader',
         options: {
-          modules: true,
+          modules: {
+            localIdentName: 'ag-[hash:base64:5]'
+          }
         }
       }
     ]
