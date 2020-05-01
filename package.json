@@ -1,0 +1,15 @@
+{
+  "name": "agathos-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "author": "cleysonlb",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
