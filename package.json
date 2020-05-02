@@ -7,11 +7,29 @@
     "start": "start-storybook -p 6006",
     "build": "babel src/ -d lib/",
     "lint": "eslint 'src/components/**/*.{js,jsx}' --fix",
-    "type-check": "flow",
+    "type-check": "flow check",
+    "prettier": "prettier --parser flow --write '**/*.js'",
     "test": "jest"
   },
   "author": "cleysonlb",
   "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint 'src/components/**/*.{js,jsx}' --fix",
+      "jest",
+      "flow focus-check",
+      "prettier --parser flow --write"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -36,6 +54,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "flow-bin": "^0.123.0",
+    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.5.3",
     "prettier": "^2.0.5",
