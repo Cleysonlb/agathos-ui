@@ -4,5 +4,5 @@ import Test from './Test';
 
 storiesOf('Components/Test', module)
   .add('Test', () => (
-    <Test text={"hello world"} />
+    <Test title="hello world" />
   ));
