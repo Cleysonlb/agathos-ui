@@ -23,7 +23,8 @@
       "eslint 'src/components/**/*.{js,jsx}' --fix",
       "jest",
       "flow focus-check",
-      "prettier --parser flow --write"
+      "prettier --parser flow --write '**/*.js'",
+      "git add"
     ],
     "*.css": [
       "stylelint --fix",

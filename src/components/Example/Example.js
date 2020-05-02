@@ -1,18 +1,18 @@
 // @flow
-import React from 'react';
-import styles from './Example.css'
+import React from "react";
+import styles from "./Example.css";
 
 export type Props = {
-  title: String
+  title: String,
 };
 
 const Example = (props: Props) => {
-  const { title } = props
-  return(
+  const { title } = props;
+  return (
     <div>
       <h1 className={styles.title}>{title}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Example
+export default Example;
