@@ -1,18 +1,18 @@
 // @flow
 import React from 'react';
-import styles from './Test.css'
+import styles from './Example.css'
 
 export type Props = {
   title: String
 };
 
-const Test = (props: Props) => {
+const Example = (props: Props) => {
   const { title } = props
   return(
     <div>
-      <h1 className={styles.text}>{title}</h1>
+      <h1 className={styles.title}>{title}</h1>
     </div>
   )
 }
 
-export default Test
+export default Example
