@@ -1,0 +1,23 @@
+.AlertPanel {
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  padding: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.success {
+  color: #ffffff;
+  background-color: #1dd1a1;
+}
+
+.warning {
+  color: #ffffff;
+  background-color: #feca57;
+}
+
+.danger {
+  color: #ffffff;
+  background-color: #ff6b6b;
+}
